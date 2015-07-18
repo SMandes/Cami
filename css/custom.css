@@ -262,6 +262,10 @@ p.copyright{
 		font-size: 14px;
 	}
 	
+	.tid-bit p{
+		padding: 5%;
+	}
+	
 	p.copyright{
 	font-size: 9px;
 }

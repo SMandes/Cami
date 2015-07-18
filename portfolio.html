@@ -61,7 +61,7 @@
 					<ul>
 						<li><a href="index.html" alt="Cami Foto">home</a></li>
 						<li>//</li>
-						<li><a href="#" alt="Cami Foto Contact">contact</a></li>
+						<li><a href="#contact" alt="Cami Foto Contact">contact</a></li>
 					</ul>
 				</div>
 			</div><!-- /.section group -->
@@ -179,6 +179,7 @@ ante, nec ultrices neque aliquet non.</p>
 
 				<div class="col span_1_of_2">
 					<div class="address">
+						<a id="contact"></a>
 						<p class="right-align">Cami Foto Studio<br> 303 Meserole St<br> Brooklyn, NY<br> 719.224.5487</p>
 					</div>
 					<form>
@@ -204,12 +205,34 @@ ante, nec ultrices neque aliquet non.</p>
 
 	<!-- JQuery Library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Scroll to the top button -->
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow13.js"></script>
+	
+	<script>/*JQuery Smooth Scrolling Script*/
+		$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+	
 	<!-- WoW.js for scrolling animations -->
 	<script src="js/wow.min.js"></script>
 	<script>
 	 new WOW().init();
 	</script>
+	
 	<!-- Bootstrap JS for Forms only -->
-	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>	
 </body>
 </html>
