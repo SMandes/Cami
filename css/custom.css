@@ -1,0 +1,271 @@
+/*  
+	======================== 
+	General Styles
+	======================== 
+	*/
+html{
+	height: 100%;
+}
+	
+body { 
+	padding:2em; 
+	font : 100%/1.4 'Helvetica Neue', arial, helvetica, helve, sans-serif; 
+	border: 15px solid #e6e6e6;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;		
+}
+
+body.folio{
+	position: relative;
+}
+	
+h1 { 
+	font-size:2.2em; 
+	padding:0 0 .5em 0; 
+}
+	
+h2 { 
+	font-size:1.5em; 
+}
+
+p{
+	font-family: Courier New;
+	font-size: 11px;
+	color: #474747;
+}
+
+a{
+	font-family: Courier New;
+	font-size: 11px;
+}
+
+.section{
+	margin: 0 auto;
+}
+
+/*----------------
+
+	Splash Screen Styles
+
+---------------------------*/
+.camera{
+	margin-top: 10%;
+}
+.cami-logo{
+	margin: 25%;
+}
+
+.header p{
+	text-align: right;
+	padding: 0 0 0 10%;
+}
+
+/*------------End---------------*/
+
+
+/*--------------------------
+
+	Folio Styles
+
+----------------------------*/
+
+/* Header */
+.wrapper{
+	background: url('../img/folio-top-bg.png') no-repeat;
+	padding: 2em;
+}
+
+
+.container{
+	padding: 2em;
+}
+
+.folio-section{
+	margin: 0 auto 10%;	
+}
+
+body.folio{
+	padding: 0;
+}
+
+.nav li{
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.nav ul{
+	float: right;
+}
+
+.nav a{
+	transition: color 0.2s ease;
+	color: #474747;
+}
+
+.nav a:hover{
+	color: #606060;
+}
+
+.tid-bit{
+	background-color: #474747;
+	display: block;
+	margin: 0 0 2% 0;
+}
+
+.tid-bit p{
+	color: #FFF;
+	text-align: left;
+	padding: 5%;
+}
+
+.hire-section{
+	background: url('../img/hire-bg.jpg') no-repeat fixed center center;
+	background-size: cover;
+	padding: 119px 0;
+	margin: 0 auto 10%;
+}
+.hire-section p{
+	text-align: center;
+}
+.hire-btn{
+	border: 1px solid #FFF;
+	padding: 20px 60px;
+	color: #FFF;
+	transition: background-color 0.4s ease;
+}
+.hire-btn:hover{
+	background-color: #FFF;
+	color: #474747;
+}
+
+p.left-align{
+	text-align: left;
+}
+p.center-align{
+	text-align: center;
+}
+p.right-align{
+	text-align: right;
+}
+
+
+
+/* Footer */
+
+.foot-wrapper{
+	background: url('../img/folio-bottom-bg.png') no-repeat bottom;
+	padding: 2em;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.form-btn {
+  font-family: Courier New;
+  color: #474747;
+  font-size: 11px;
+  background: #ffffff;
+  padding: 12px 55px;
+  text-decoration: none;
+}
+
+.form-btn:hover {
+  background: #f3f3f3;
+  text-decoration: none;
+}
+
+.form-control{
+	font-size: 11px;
+	font-family: Courier New;
+	color: #474747;
+	border-radius: 0;
+	box-shadow: 0;
+	height: 43px;
+}
+
+label{
+	font-family: Courier New;
+	font-size: 11px;
+}
+
+p.copyright{
+	margin-top: 30px;
+	font-size: 10px;
+}
+
+.address{
+	padding: 75px 0 50px;
+}
+
+/*------------End---------------*/
+
+
+
+/*--------------------------
+
+	Media Queries
+
+---------------------------*/
+@media only screen and (max-width: 480px) {
+	
+	body{
+		padding: .5em;
+	}
+	
+	.header{
+		text-align: center;
+	}
+	.header p{
+		text-align: center;
+		padding: 0;
+	}
+	
+	.container{
+		padding: .5em;
+	}
+	
+	.folio-section{
+		margin: 0 auto 20%;	
+	}
+	
+	.wrapper{
+		padding: .5em;
+	}
+
+	.wrapper p{
+		text-align: center;
+	}
+	
+	.camera{
+		margin-top: 0%;
+	}
+	
+	.cami-logo{
+		margin: 15%;
+	}
+	
+	.nav ul{
+		float: none;
+	}
+	
+	.nav{
+		text-align: center;
+		margin: 10% 0;
+	}
+	
+	.nav a{
+		font-size: 14px;
+	}
+	
+	p.copyright{
+	font-size: 9px;
+}
+
+}
+
+/*------------End---------------*/
