@@ -54,7 +54,7 @@
 		<div class="header">
 			<div class="section group">
 				<div class="col span_1_of_2">
-					<a href="index.html"><img src="img/logo.png" alt="Cami Foto"></a>
+					<a href="index.html"><img src="img/logo.png" width="167px" height="52px" alt="Cami Foto"></a>
 				</div>
 				
 				<div class="col span_1_of_2 nav">
@@ -225,6 +225,20 @@ ante, nec ultrices neque aliquet non.</p>
   });
 });
 	</script>
+	<!-- Parallax Effect-->
+	<script type="text/javascript">
+        
+        (function() {  
+            var documentEl = $(document),
+                parallaxBg = $('div.hire-section');
+            
+            documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                parallaxBg.css('background-position', '0 ' + -currScrollPos/55 + 'px');
+            });
+        })();
+
+    </script>
 	
 	<!-- WoW.js for scrolling animations -->
 	<script src="js/wow.min.js"></script>
